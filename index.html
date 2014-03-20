@@ -1,42 +1,21 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
     <meta name="description" content="Miszki.github.io : Репозиторий для лабораторной работы №3 по методам и средствам защиты информации" />
-
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
     <title>Miszki.github.io</title>
   </head>
-
   <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/ajikcey/miszki.github.io">View on GitHub</a>
-
-          <h1 id="project_title">Miszki.github.io</h1>
-          <h2 id="project_tagline">Репозиторий для лабораторной работы №3 по методам и средствам защиты информации</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/ajikcey/miszki.github.io/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/ajikcey/miszki.github.io/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
     <form>
       <input type="text" name="name">
       <input type="text" name="password">
       <button>Отправить</button>
     </form>
-    
     <script>
     $(function() {
+      alert();
         $('button').on('click', function() {
           var form = $(this).parents('form').
           var name = form.find('input[name="name"]');
@@ -46,16 +25,6 @@
         });      
     });
     </script>
-    
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Miszki.github.io maintained by <a href="https://github.com/ajikcey">ajikcey</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-
   </body>
 </html>
