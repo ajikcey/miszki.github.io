@@ -7,3 +7,10 @@ $(function() {
     password.parent().find('span').html(password.val());
   });      
 });
+
+
+// использование Math.round() даст неравномерное распределение!
+function getRandomInt(min, max)
+{
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
