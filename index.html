@@ -7,19 +7,14 @@
   </head>
   <body>
     <div id="form">
-      <div>
-        <input type="text" name="name">
-        <span></span>
-      </div>
-      <div>
-        <input type="text" name="password">
-        <span></span>
-      </div>
-      <div>
-        <button>Отправить</button>
-      </div>
+      <textarea id="txt1">Привет, как дела?</textarea>
+      <textarea id="txt2">Привет, как дела?</textarea>
     </div>
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/sha256.js"></script>
+    <script>
+        var hash = CryptoJS.SHA256("Message");
+    </script>
     <script src="javascripts/main.js"></script>
   </body>
 </html>
