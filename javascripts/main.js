@@ -2,8 +2,8 @@ $(function() {
   $('button').on('click', function() {
     var form = $(this).parents('#form');
     var name = form.find('input[name="name"]');
-    name.parent().find('div').html(name.val());
+    name.parent().find('span').html(name.val());
     var password = form.find('input[name="password"]');
-    password.parent().find('div').html(password.val());
+    password.parent().find('span').html(password.val());
   });      
 });
