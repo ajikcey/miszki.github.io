@@ -1,6 +1,8 @@
 miszki.github.io
 ================
 
+<a href="http://ajikcey.github.io/miszki.github.io/" target="_blank">Демо</a>
+
 Лабораторная работа №3
 по предмету Методам и средствам защиты информации
 
