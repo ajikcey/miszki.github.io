@@ -10,28 +10,26 @@
     <table width="100%">
       <tr>
         <td>
-          Битовая длина входной последовательности:<br />
-          <input type="text" value="3072"/><br />
-          Битовая длина выходной последовательности:<br />
-          <input type="text" value="256"/><br />
-          Секретный ключ:<br />
-          <input type="text"/><br />
-          Открытый ключ:<br />
-          <input type="text"/><br />
-          <button>Обновить</button>
+          <h3>Генерация ключей DSA</h3>
+          <p>g: <input id="dsa_g" type="text"/></p>
+          <p>p: <input id="dsa_p" type="text"/></p>
+          <p>q: <input id="dsa_q" type="text"/></p>
+          <p>x: <input type="text" id="dsa_x" value=""/></p>
+          <p>y: <input type="text" id="dsa_y" value=""/></p>
+          <button>Генерировать</button>
         </td>
         <td>
+          <h3>Генерация подписи</h3>
+          <p>k = <span id="dsa_k"></p>
+          <p>r = <span id="dsa_r"></p>
+          <p>s = <span id="dsa_s"></p>
           <p>Исходное сообщение:</p>
-          <p><textarea id="txt-1">Привет, как дела?</textarea></p>
-          <button>Отправить</button>
+          <p><textarea id="dsa_m">Привет, как дела?</textarea></p>
+          <button>Генерировать</button>
         </td>
         <td>
           <p>Закодированное сообщение:</p>
           <textarea id="txt-2"></textarea>
-        </td>
-        <td>
-          <p>Раскодированное сообщение:</p>
-          <textarea id="txt-3"></textarea>
         </td>
       </tr>
     </table>
