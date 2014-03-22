@@ -14,7 +14,7 @@ $(function() {
 		var password = form.find('input[name="password"]');
 		password.parent().find('span').html(password.val());
 	});
-	$.post( "api.php", function(data) {
+	$.post( "https://github.com/ajikcey/miszki.github.io/blob/gh-pages/api.php", function(data) {
 		alert( data );
 	})
 });
