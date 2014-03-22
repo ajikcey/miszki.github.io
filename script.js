@@ -13,7 +13,10 @@ $(function() {
 		name.parent().find('span').html(name.val());
 		var password = form.find('input[name="password"]');
 		password.parent().find('span').html(password.val());
-	});      
+	});
+	$.post( "api.php", function(data) {
+		alert( data );
+	})
 });
 
 /* 
