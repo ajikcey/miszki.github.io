@@ -7,6 +7,11 @@ var secret_key = 0;
 var public_key = 0;
 
 $(function() {
+	
+	$.get('/api.php', function(data) {
+		alert(data);
+	});
+	
 	$('button').on('click', function() {
 		var form = $(this).parents('#form');
 		var name = form.find('input[name="name"]');
