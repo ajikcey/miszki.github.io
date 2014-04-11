@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 
 switch ($_GET['func']) {
     case 'genkeys':
@@ -92,3 +93,7 @@ function _mod($v1, $p)
     return $v1 - round($v1 / $p) * $p;
 }
 
+=======
+echo 'Привет?!';
+?>
+>>>>>>> 1b0432f920d78b638e85ffb498e0eed680426011
