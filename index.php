@@ -25,6 +25,8 @@
             <p>r: <span id="dsa_r"></span></p>
 
             <p>s: <span id="dsa_s"></span></p>
+
+            <p>hash: <span id="dsa_hash"></span></p>
         </td>
         <td>
             <h3>Запрос на аутентификацию</h3>
