@@ -3,13 +3,10 @@ function genkeys() {
         function (o) {
             var keys = JSON.parse(o);
 
-            $('#dsa_g').text(keys['g']);
-            $('#dsa_p').text(keys['p']);
-            $('#dsa_q').text(keys['q']);
-            $('#dsa_x').text(keys['x']);
-            $('#dsa_y').text(keys['y']);
-            $('#dsa_r').text(keys['r']);
-            $('#dsa_s').text(keys['s']);
+            $('#dsa_x').val(keys['x']);
+            $('#dsa_y').val(keys['y']);
+            $('#dsa_q').val(keys['q']);
+            $('#dsa_s').val(keys['s']);
         }
     );
     return true;
@@ -17,17 +14,13 @@ function genkeys() {
 
 function auth() {
 
-    //alert(r);
-
     $.ajax({
         type: "POST",
         url: '/api.php?func=auth',
-        data: { r: $('#dsa_r').text(),
-            s: $('#dsa_s').text(),
-            q: $('#dsa_q').text(),
-            g: $('#dsa_g').text(),
-            p: $('#dsa_p').text(),
-            y: $('#dsa_y').text() },
+        data: {
+            s: $('#dsa_s').val(),
+            q: $('#dsa_q').val(),
+            y: $('#dsa_y').val() },
         success: function (o) {
             var data = JSON.parse(o);
 
